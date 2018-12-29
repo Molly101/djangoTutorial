@@ -5,8 +5,9 @@
 		<h1>Blogi</h1>
 		{% for post in posts %}
 			<div>
+				<h2><a href="">{{ post.title }}</a></h2>
         		<p>Created: {{ post.created_date }}</p>
-        		<h2><a href="">{{ post.title }}</a></h2>
+        		
         		<p>{{ post.text|linebreaksbr }}</p>
     </div>
         {% endfor %}
